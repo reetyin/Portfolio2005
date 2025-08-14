@@ -1,0 +1,160 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #f7f8fa;
+}
+
+.portfolio-container {
+  max-width: 900px;
+  margin: 32px auto;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.portfolio-header {
+  background: linear-gradient(90deg, #4f8cff 0%, #6dd5ed 100%);
+  color: #fff;
+  padding: 32px 24px 16px 24px;
+  text-align: center;
+}
+.portfolio-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.portfolio-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.portfolio-content {
+  padding: 24px;
+  flex: 1;
+}
+
+.portfolio-section {
+  margin-bottom: 32px;
+}
+.portfolio-section h2 {
+  font-size: 1.4rem;
+  color: #4f8cff;
+  margin-bottom: 12px;
+  border-left: 4px solid #4f8cff;
+  padding-left: 8px;
+}
+
+.portfolio-info {
+  display: flex;
+  gap: 32px;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.portfolio-info span {
+  background: #f0f4ff;
+  padding: 6px 16px;
+  border-radius: 8px;
+}
+
+.portfolio-project {
+  margin-bottom: 24px;
+  background: #f8fbff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.07);
+}
+.portfolio-project h3 {
+  margin-top: 0;
+  color: #2d3a4a;
+}
+.portfolio-project a {
+  color: #4f8cff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.portfolio-project ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+.portfolio-project li {
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 0.98rem;
+}
+.portfolio-table th, .portfolio-table td {
+  border: 1px solid #e0e7ff;
+  padding: 8px 6px;
+  text-align: left;
+}
+.portfolio-table th {
+  background: #eaf3ff;
+  color: #2d3a4a;
+}
+.portfolio-table tr:nth-child(even) {
+  background: #f6faff;
+}
+
+.portfolio-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+.portfolio-skills li {
+  background: #eaf3ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.portfolio-resource {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8fbff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.07);
+}
+.portfolio-resource img {
+  border-radius: 8px;
+}
+.portfolio-resource a {
+  color: #4f8cff;
+  font-weight: 500;
+}
+
+.portfolio-setup {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+.portfolio-setup li {
+  background: #f0f4ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.portfolio-footer {
+  background: #eaf3ff;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 1rem;
+  color: #4f8cff;
+  border-top: 1px solid #e0e7ff;
+}
