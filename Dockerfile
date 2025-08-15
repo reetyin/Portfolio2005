@@ -1,12 +1,12 @@
-# 使用 Nginx 部署 React 生产环境
+# Dockerfile for Yin Rui Final Site
 
-# 构建阶段
+# Build Stage
 FROM node:20 AS build
 WORKDIR /yin_rui_final_site
 COPY . .
 RUN npm install && npm run build
 
-# 生产阶段
+# Production Stage
 FROM nginx:stable-alpine
 WORKDIR /yin_rui_final_site
 COPY --from=build /yin_rui_final_site/build /usr/share/nginx/html

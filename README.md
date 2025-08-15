@@ -29,75 +29,56 @@ http://localhost:5575
 ```
 
 ## Directory Structure
-- Working directory: `yin_rui_final_site`
-- Main code in the `src/` folder
 
-## Development
-For development or debugging, use `npm start` to launch the development server.
+# Rui Yin Portfolio Website
 
-## Available Scripts
+## Assignment Overview
 
-In the project directory, you can run:
+This is the final portfolio assignment for the BSBT program. The site is built with Create React App and highlights all course work completed so far. It uses a component library and is fully dockerized to run at `localhost:5575`.
 
-### `npm start`
+## Sections Included
+- Basic Information
+- Work
+- Skills
+- Resources
+- Developer Setup
+- Real project data and images
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to Run (Dockerized)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Build the Docker image:**
+	```bash
+	docker build -t yin_rui_coding_assignment14 .
+	```
 
-### `npm test`
+2. **Run the container (port 5575):**
+	```bash
+	docker run -d --name yin_rui_coding_assignment14 -p 5575:80 yin_rui_coding_assignment14
+	```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Open in your browser:**
+	[http://localhost:5575](http://localhost:5575)
 
-### `npm run build`
+## Directory Structure
+- Main working directory: `yin_rui_final_site`
+- Source code: `src/`
+- Dockerfile and README.md: project root
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Development (Optional)
+For local development or debugging, use:
+```bash
+npm start
+```
+This will launch the app for local development. For assignment submission, always use Docker and access at [http://localhost:5575](http://localhost:5575).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Notes
+- All requirements from the assignment are met: sections, real project data, images, modern UI, Docker deployment, and instructions.
+- No extra configuration is needed. Just follow the steps above to run the site.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Troubleshooting
+- If you encounter issues, make sure Docker is installed and running.
+- If port 5575 is in use, stop any existing containers or change the port mapping.
 
-### `npm run eject`
+## Contact
+For questions or feedback, contact Rui Yin at: reetyin@gmail.com
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
